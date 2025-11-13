@@ -9,4 +9,4 @@ When counter has a nonzero value and it is reset the value becomes zero
     Click Button  Paina
     Click Button  Paina
     Click Button  Nollaa
-    Page Should Contain  nappia painettu 0 kertaa
+    Page Should Contain  Nappia painettu 0 kertaa
