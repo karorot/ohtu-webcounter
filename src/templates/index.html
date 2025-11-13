@@ -6,16 +6,29 @@
 </head>
 <body>
   <h2>Ohtulaskuri</h2>
-  <div>nappia painettu {{ value }} kertaa</div>
-  <form action="/increment" method="POST">
-    <button type="submit">
-      Paina
-    </button>
-  </form>
-  <form action="/reset" method="POST">
-    <button type="submit">
-      Nollaa
-    </button>
-  </form>
+  <div>Nappia painettu {{ value }} kertaa</div>
+  <p>
+    <form action="/increment" method="POST">
+      <button type="submit">
+        Paina
+      </button>
+    </form>
+  </p>
+  <p>
+    <form action="/reset" method="POST">
+      <button type="submit">
+        Nollaa
+      </button>
+    </form>
+  </p>
+  <p>
+    <form action="/set" method="POST">
+      <label for="value">Aseta napin arvo:</label><br />
+      <input type="number" id="value" name="value" required>
+      <button type="submit">
+        Aseta
+      </button>
+    </form>
+  </p>
 </body>
 </html>
