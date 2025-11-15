@@ -1,6 +1,7 @@
 *** Settings ***
 Resource  resource.robot
 Suite Setup  Open And Configure Browser
+Suite Setup  Reset Counter To Zero
 Suite Teardown  Close Browser
 
 *** Test Cases ***
